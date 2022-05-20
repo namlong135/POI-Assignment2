@@ -58,7 +58,7 @@ $glc = new Cars(5, "SUV", 1, "Mercedes", "GLC", "2017", "17000", "petrol", 5, "1
 $golf = new Cars(6, "Sedan", 1, "Suzuki", "Jimny", "2014", "18000", "petrol", 5, "120", "xxxxxx");
 $jimny = new Cars(7,"SUV", 1, "BMW", "320i", "2013", "18500", "petrol", 5, "120", "xxxxxx");
 $sonata = new Cars(8,"Sedan", 1, "Hyundai", "Sonata", "2015", "19700", "petrol", 5, "120", "xxxxxx");
-$xtrail = new Cars(9, "SUV", 0, "Nissan", "X-Trail", "2016", "21000", "petrol", 5, "120", "xxxxxx");
+$xtrail = new Cars(9, "SUV", 0, "Nissan", "X-trail", "2016", "21000", "petrol", 5, "120", "xxxxxx");
 
 $array = array(
   "status" => "OK",
