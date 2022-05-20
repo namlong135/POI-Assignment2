@@ -1,6 +1,6 @@
 <?php
 session_start();
-$isCartEmpty = !isset($_SESSION['cart']);
+$empty = !isset($_SESSION['cart']);
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $isCartEmpty = !isset($_SESSION['cart']);
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="btn btn-primary" onclick="checkCartEmpty(<?php echo $isCartEmpty ?>)">
+      <button class="btn btn-primary" onclick='checkCart(<?php echo $empty ?>)'>
           Car Reservation
       </button>
     </div>
@@ -52,15 +52,9 @@ $isCartEmpty = !isset($_SESSION['cart']);
       xhttp.send();
     }
     
-    const checkCartEmpty = (isCartEmpty) => {
-      if (isCartEmpty) {
-        alert("No car has been reserved.");
-        return false;
-      } else {
-        window.location.href = "cart.php";
-        return true;
-      }
-    }
+    const checkCart = (empty) => {
+      location.href = "cart.php";
+    };
 
     const addToCart = (id) => {
       if (carData[id]["availability"] == "Y") { 

@@ -33,7 +33,7 @@ $_SESSION['total'] = $total;
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="btn btn-primary" onclick="checkCart(<?php echo $empty ?>)">
+      <button class="btn btn-primary">
           Car Reservation
       </button>
     </div>
