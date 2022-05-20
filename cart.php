@@ -51,7 +51,7 @@ echo $isCartEmpty;
                 <td class='align-middle'><img style='width: 200px; height: 160px;' class='img-thumbnail' src='./images/<?php echo $item['model'] ?>.jpg'></td>
                 <td class='align-middle'><?php echo $item['brand'] . '-' . $item['model'] . '-' . $item['modelYear']; ?></td>
                 <td class='align-middle'><?php echo $item['pricePerDay']; ?>$</td>
-                <td class='align-middle'><input id="rentalDays" name='rentalDays[]' type="number" value=<?php echo $item['rentalDays']; ?>></td>
+                <td class='align-middle'><input id="rentalDays" name='rentalDays[]' type="number" min="1" value=<?php echo $item['rentalDays']; ?>></td>
                 <td class='align-middle'><button class='btn btn-danger' name='delete' value='<?php echo $id; ?>' form="removeCar">Delete</button></td>
             </tr>
           <?php 
